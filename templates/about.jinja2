@@ -1,0 +1,27 @@
+{% extends './header.jinja2' %}
+
+{% block content %}
+
+
+<h1> {{ heading }} </h1>
+<p>Registered Users</p>
+
+<ul>
+{% if udata %}
+
+{% for u in udata %}
+   
+   <li>{{ u[1] }}</li>
+
+{% endfor %}
+
+{% else %}
+
+<p>No users</p>
+
+{% endif  %}
+</ul>
+
+
+
+{% endblock %}
