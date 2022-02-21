@@ -1,0 +1,26 @@
+
+{% extends './header.jinja2' %}
+
+
+{% block content %}
+
+
+
+<div class="greeting">
+<h1>Home</h1>
+<p>
+{{ greet }}, {{ name }}
+</p>
+</div>
+
+
+<form method="POST">
+
+<input type="text" placeholder="Fullname" name="fname">
+<input type="email" placeholder="Email" name="email">
+<input type="submit" value="Get Started">
+</form>
+
+
+
+{% endblock %}
